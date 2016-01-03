@@ -57,29 +57,18 @@ def getSortedUsers()
 	 return @sortedUsersPoints
 end
 
-	buzzword_counts = Hash.new({ value: 0 })
 
 
 scheduler.every '5s' do
-	Top5Players = []
-	Top5Scores = []
+	buzzword_counts = Hash.new({ value: 0 })
 	i = 0
 	fakeArray = getSortedUsers()
-	while i < fakeArray.length ;
-		# puts fakeArray
-
-		entry= fakeArray[i]
-		username = entry[0]
-		number = entry[1]
-
-		Top5Players << (username)
-		Top5Scores << (number) 
- 		buzzword_counts[Top5Players[i]] = { label: Top5Players[i], value: Top5Scores[i] }
-  		puts buzzword_counts[Top5Players[i]].values
- 		send_event('buzzwords', { items: buzzword_counts.values })
- 		 
+	while i < fakeArray.length;
+ 		buzzword_counts[fakeArray[i]] = { label: fakeArray[i][0], value: fakeArray[i][1] }
+  		# puts buzzword_counts[Top5Players[i]].values
  		i += 1
 	end
+	send_event('buzzwords', { items: buzzword_counts.values })
 end
 
 
