@@ -64,7 +64,7 @@ buzzword_counts = Hash.new({ value: 0 })
 Top5Players = []
 Top5Scores = []
 j = 0
-SCHEDULER.every '5s' do 
+SCHEDULER.every '1s' do 
 	while j < fakeArray.length ;
 		entry= fakeArray[j]
 		username = entry[0]
@@ -75,7 +75,7 @@ SCHEDULER.every '5s' do
 	end
 end
 i = 0
-SCHEDULER.every '10s' do
+SCHEDULER.every '3s' do
 	while i < fakeArray.length ;
 		buzzwords = fakeArray
  		buzzword_counts[Top5Players[i]] = { label: Top5Players[i], value: Top5Scores[i] }
