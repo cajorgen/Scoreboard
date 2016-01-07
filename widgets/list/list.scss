@@ -26,7 +26,7 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
     text-align: left;
     color: $label-color;
     font-size: 225%;
-    margin-top: 18%;
+    margin-top: 45%;
 
   }
 
@@ -34,14 +34,38 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
     list-style-position: inside;
   }
 
+
+/*li::marker { 
+  width: 30px;
+  text-align: right;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+ol { 
+  list-style: symbols("*" "\2020" "\2021" "\A7"); 
+}
+
+ul { 
+  list-style-type: "★"; 
+}*/
+
   li {
     margin-bottom: 5px;
     margin: auto;
-    width: 60%;
+    width: 75%;
     padding: 5px;
-    margin-left: 33%;
+    margin-left: 10%;
+    
   }
 
+/*  li::before {
+      counter-increment: mycounter;
+      content: counter(mycounter) ". "
+  }
+  li:first-of-type{
+    counter-reset: mycounter
+}*/
   .list-nostyle {
     list-style: decimal;
   }

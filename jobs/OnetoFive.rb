@@ -48,7 +48,7 @@ fakeArray = []
 			player[1] = player[1].to_s
  		end
  	end
- 	return peopleArray.take(5)
+ 	return peopleArray.take(10)
  end
 def getSortedUsers()
 	 currentPoints = cleanFirebase('currentGameUserPoints')
@@ -63,12 +63,13 @@ scheduler.every '5s' do
 	buzzword_counts = Hash.new({ value: 0 })
 	i = 0
 	fakeArray = getSortedUsers()
-	while i < fakeArray.length - 2;
+	while i < fakeArray.length - 5 ;
  		buzzword_counts[fakeArray[i]] = { label: fakeArray[i][0], value: fakeArray[i][1] }
   		# puts buzzword_counts[Top5Players[i]].values
  		i += 1
 	end
-	send_event('buzzwords', { items: buzzword_counts.values })
+	send_event('OnetoFive', { items: buzzword_counts.values })
+	# send_event('SixtoTen',{ items: buzzword_counts.values})
 end
 
 

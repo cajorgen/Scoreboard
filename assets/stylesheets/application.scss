@@ -5,7 +5,7 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-image: url(TopLineScoreboardWinterhawks2.png);
+$background-color: red;
 $text-color: #fff;
 
 $background-warning-color-1: #e82711;
@@ -43,7 +43,7 @@ html {
 
 body {
   margin: 0;
-  background-image: $background-image;
+  background-color: $background-color;
   font-size: 20px;
   color: $text-color;
   font-family: "Franklin Gothic Heavy";
@@ -83,6 +83,7 @@ td {
 }
 
 ul, ol {
+
   padding: 0;
   margin: 0;
 }
