@@ -25,9 +25,8 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
     text-align: left;
     color: $label-color;
-    font-size: 225%;
-    margin-top: 45%;
-
+    font-size: 350%;
+    margin-top: 75%;
   }
 
   ol {
@@ -44,19 +43,18 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
 ol { 
   list-style: symbols("*" "\2020" "\2021" "\A7"); 
-}
+}*/
 
 ul { 
   list-style-type: "★"; 
-}*/
+}
 
   li {
     margin-bottom: 5px;
     margin: auto;
-    width: 75%;
-    padding: 5px;
-    margin-left: 10%;
-    
+    width: 90%;
+    padding-top: 35px;
+    margin-left: 20px;    
   }
 
 /*  li::before {
