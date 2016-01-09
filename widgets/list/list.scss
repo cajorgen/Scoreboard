@@ -43,42 +43,33 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
 ol { 
   list-style: symbols("*" "\2020" "\2021" "\A7"); 
-}*/
+}
 
-// ul { 
-//   list-style-type: "★"; 
-// }
+ ul { 
+   list-style-type: "★"; 
+ }*/
 
   ul li:nth-child(1){
-    // color:red;
+    margin-left: 40px;
+    padding-left: 70px;
     background: url(HawkStar50X50-2.png) left center no-repeat;
-      // padding: 3px 0px 3px 10px;
-  /* reset styles (optional): */
-  list-style: none;
-  // margin: 0;
-  //   list-style-position: inside;
-  //   list-style-image:url(HawkStar50X50-2.png);
+    list-style: none;
+    // padding-left: 20px; 
   }
   
   ul li:nth-child(2){
-    // color:red;
-      // padding: 3px 0px 3px 10px;
-      background: url(hawksstarbronze.png) left center no-repeat;
-  /* reset styles (optional): */
-  list-style: none;
-  // margin: 0;
-  //   list-style-position: inside;
-  //   list-style-image:url(hawksstarbronze.png);
+    margin-left: 40px;
+    padding-left: 70px;
+    background: url(hawksstarbronze.png) 0% center no-repeat;
+    list-style: none;
   }
   
   ul li:nth-child(3){
-    // color:red;
-      background: url(HawksStarSilver.png) left center no-repeat;
-  /* reset styles (optional): */
-  list-style: none;
-  // margin: 0;
-    // list-style-position: inside;
-    // list-style-image:url(HawksStarSilver.png);
+    margin-left: 40px;
+    padding-left: 70px;
+    // padding-left: 20px; 
+    background: url(HawksStarSilver.png) left center no-repeat;
+    list-style: none;
   }
 
   li {
