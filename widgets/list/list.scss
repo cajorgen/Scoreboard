@@ -45,9 +45,30 @@ ol {
   list-style: symbols("*" "\2020" "\2021" "\A7"); 
 }*/
 
-ul { 
-  list-style-type: "★"; 
-}
+// ul { 
+//   list-style-type: "★"; 
+// }
+
+  ul li:nth-child(1){
+    // color:red;
+    margin-left: 35px;
+    list-style-position: inside;
+    list-style-image:url(HawkStar50X50-2.png);
+  }
+  
+  ul li:nth-child(2){
+    // color:red;
+    margin-left: 35px;
+    list-style-position: inside;
+    list-style-image:url(hawksstarbronze.png);
+  }
+  
+  ul li:nth-child(3){
+    // color:red;
+    margin-left: 35px;
+    list-style-position: inside;
+    list-style-image:url(HawksStarSilver.png);
+  }
 
   li {
     margin-bottom: 5px;

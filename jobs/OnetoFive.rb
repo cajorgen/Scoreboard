@@ -7,7 +7,7 @@ require('pp')
 require('date')
 require('rufus-scheduler')
 require('rspec')
-require('nokogiri')
+# require('nokogiri')
 
 base_uri = 'https://whawksv2.firebaseio.com'
 
