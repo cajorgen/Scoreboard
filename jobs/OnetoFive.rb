@@ -43,6 +43,9 @@ fakeArray = []
  		userNames.each do |uid|
  			if (player[0] === uid[0])
  				player[0] = (uid[1].values)[0]
+ 				if player[0].length > 10
+ 					player[0] = player[0][0..10]
+ 				end
  			end
  			#player[2] = "(" + count.to_s + ")"
 			player[1] = player[1].to_s
