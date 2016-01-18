@@ -93,6 +93,26 @@ ul, ol {
   margin: 0;
 }
 
+li:nth-child(1) ul li:nth-child(1) {
+  margin-left: 40px;
+    padding-left: 70px;
+  background: url(HawkStar50X50-2.png) left center no-repeat;
+    list-style: none;
+}
+li:nth-child(2) ul li:nth-child(1) {
+    margin-left: 40px;
+    padding-left: 70px;
+    background: url(HawksStarSilver.png) 0% center no-repeat;
+    list-style: none;
+}
+li:nth-child(2) ul li:nth-child(2) {
+    margin-left: 40px;
+    padding-left: 70px;
+    background: url(hawksstarbronze.png) left center no-repeat;
+    list-style: none;
+}
+
+
 h1, h2, h3, h4, h5, p {
   padding: 0;
   margin: 0;
