@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'dashing'
+gem 'obscenity'
 gem('sinatra')
 gem('sinatra-contrib')
 gem('json')

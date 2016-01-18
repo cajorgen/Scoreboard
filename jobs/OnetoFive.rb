@@ -62,10 +62,12 @@ end
 
 
 
-scheduler.every '5s' do
+scheduler.every '50s' do
 	buzzword_counts = Hash.new({ value: 0 })
-	i = 0
+	buzzword_topOne = Hash.new({ value: 0 })
+	i = 1
 	fakeArray = getSortedUsers()
+	buzzword_topOne[fakeArray[0]] = { label: fakeArray[0][0], value: fakeArray[0][1] }
 	while i < fakeArray.length - 5 ;
 
  		buzzword_counts[fakeArray[i]] = { label: fakeArray[i][0], value: fakeArray[i][1] }
@@ -73,6 +75,7 @@ scheduler.every '5s' do
  		i += 1
 	end
 	send_event('OnetoFive', { items: buzzword_counts.values })
+	send_event('Top1', { items: buzzword_topOne.values })
 	# send_event('SixtoTen',{ items: buzzword_counts.values})
 end
 

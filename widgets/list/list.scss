@@ -22,11 +22,10 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
   }
 
   ol, ul {
-
     text-align: left;
     color: $label-color;
     font-size: 225%;
-    margin-top: 32%;
+    // margin-top: 32%;
   }
 
   ol {
@@ -76,7 +75,7 @@ ol {
     margin-bottom: 5px;
     margin: auto;
     width: 70%;
-    padding-top: 17px;
+    padding-top: 0px;
     margin-left: 108px;    
   }
 

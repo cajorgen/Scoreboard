@@ -7,6 +7,7 @@ require('pp')
 require('date')
 require('rufus-scheduler')
 require('rspec')
+require('obscenity')
 # require('nokogiri')
 
 base_uri = 'https://whawksv2.firebaseio.com'
@@ -36,6 +37,7 @@ fakeArray = []
  end
  
  def getUserNames(peopleArray)
+ 	puts Obscenity.profane?("shit5")
  	userNames = cleanFirebase('uidToUsername')
  	count = 0
  	peopleArray.each do |player|
@@ -67,11 +69,11 @@ scheduler.every '5s' do
 	buzzword_counts = Hash.new({ value: 0 })
 	i = 0
 	fakeArray = getSortedUsers()
-	while i < fakeArray.length ;
+	while i < fakeArray.length
  		buzzword_counts[fakeArray[i]] = { label: fakeArray[i][0], value: fakeArray[i][1] }
   		# puts buzzword_counts[Top5Players[i]].values
  		i += 1
 	end
 	#send_event('OnetoFive', { items: buzzword_counts.values })
-	send_event('SixtoTen',{ items: buzzword_counts.values[5..9]})
+	send_event('SixtoTen',{ items: buzzword_counts.values[5..8]})
 end
