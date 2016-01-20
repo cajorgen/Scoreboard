@@ -39,7 +39,6 @@ fakeArray = []
  end
  
  def getUserNames(peopleArray)
- 	puts Obscenity.profane?("shit5")
  	userNames = cleanFirebase('uidToUsername')
  	count = 0
  	peopleArray.each do |player|
