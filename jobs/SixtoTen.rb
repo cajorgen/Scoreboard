@@ -72,7 +72,7 @@ scheduler.every '5s' do
 	i = 0
 	fakeArray = getSortedUsers()
 	while i < fakeArray.length
- 		buzzword_counts[fakeArray[i]] = { label: fakeArray[i][0], value: fakeArray[i][1] }
+ 		buzzword_counts[fakeArray[i]] = { label: fakeArray[i][0].downcase, value: fakeArray[i][1] }
   		# puts buzzword_counts[Top5Players[i]].values
  		i += 1
 	end
