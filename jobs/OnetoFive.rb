@@ -44,7 +44,16 @@ fakeArray = []
  		count = count + 1
  		userNames.each do |uid|
  			if (player[0] === uid[0])
- 				player[0] = (uid[1].values)[0]
+ 				player[0] = (uid[1].values)[0].downcase
+ 				@badwords.each do |word|
+ 						if (player[0].include?(word.downcase))
+ 							if(@exceptions.include?(player[0]))
+ 								puts "Exception " + player[0]
+ 							else
+ 								player[0] = player[0].gsub!(word.downcase, "****")
+ 							end
+ 						end
+ 					end
  				if player[0].length > 10
  					player[0] = player[0][0..10]
  				end
@@ -64,7 +73,7 @@ end
 
 
 
-scheduler.every '50s' do
+scheduler.every '5s' do
 	buzzword_counts = Hash.new({ value: 0 })
 	buzzword_topOne = Hash.new({ value: 0 })
 	i = 1
