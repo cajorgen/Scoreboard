@@ -56,7 +56,7 @@ fakeArray = []
  						end
  					end
  				if player[0].length > 10
- 					player[0] = player[0][0..10]
+ 					player[0] = player[0][0..9]
  				end
  			end
  			#player[2] = "(" + count.to_s + ")"

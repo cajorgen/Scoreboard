@@ -73,5 +73,5 @@ scheduler.every '5s' do
  		i += 1
 	end
 	#send_event('OnetoFive', { items: buzzword_counts.values })
-	send_event('NumbaOne',{ items: buzzword_counts.values[1] })
+	# send_event('NumbaOne',{ items: buzzword_counts.values[1] })
 end
