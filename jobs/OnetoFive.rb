@@ -79,10 +79,10 @@ scheduler.every '10s' do
 	buzzword_topOne = Hash.new({ value: 0 })
 	i = 1
 	fakeArray = getSortedUsers()
-	buzzword_topOne[fakeArray[0]] = { label: fakeArray[0][0], value: fakeArray[0][1] }
+	buzzword_topOne[fakeArray[0]] = { label: fakeArray[0][0].downcase, value: fakeArray[0][1] }
 	while i < fakeArray.length - 5 ;
 
- 		buzzword_counts[fakeArray[i]] = { label: fakeArray[i][0], value: fakeArray[i][1] }
+ 		buzzword_counts[fakeArray[i]] = { label: fakeArray[i][0].downcase, value: fakeArray[i][1] }
   		# puts buzzword_counts[Top5Players[i]].values
  		i += 1
 	end
