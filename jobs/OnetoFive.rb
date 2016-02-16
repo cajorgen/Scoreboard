@@ -74,7 +74,7 @@ end
 
 
 
-scheduler.every '5s' do
+scheduler.every '10s' do
 	buzzword_counts = Hash.new({ value: 0 })
 	buzzword_topOne = Hash.new({ value: 0 })
 	i = 1
